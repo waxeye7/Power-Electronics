@@ -1,0 +1,56 @@
+.inline-block { display:inline-block }
+.flex { display:flex; }
+
+.burger-menu { height:60px;}
+.oval { height:10px; width:35px; border-radius: 14%; background-color: black; }
+
+.header-margin { margin:20px; }
+.width80 { width:auto; }
+
+.small-margin-top { margin-top: 5px; }
+
+.circle { border-radius:50%; height:110px; width:110px; background-color:#67F37A; margin-left:auto; margin-right:auto; border:2px black solid;}
+.img-wrapper-lock { max-height:46px; max-width:46px; }
+.img-wrapper-lock img { height:100%; width:100%; }
+
+
+
+
+
+
+body { font-family:"MavenPro-Regular", Arial, sans-serif; }
+
+@font-face {
+    font-family: "MavenPro-Regular";
+    src: url("./fonts/MavenPro-Regular.ttf");
+  }
+
+@font-face {
+    font-family: "MavenPro-Black";
+    src: url("./fonts/MavenPro-Black.ttf");
+  }
+
+@font-face {
+    font-family: "MavenPro-Bold";
+    src: url("./fonts/MavenPro-Bold.ttf");
+  }
+
+@font-face {
+    font-family: "MavenPro-Medium";
+    src: url("./fonts/MavenPro-Medium.ttf");
+  }
+
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url("./fonts/OpenSans-Regular.ttf");
+  }
+
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url("./fonts/OpenSans-Bold.ttf");
+  }
+
+@font-face {
+    font-family: "OpenSans-Light";
+    src: url("./fonts/OpenSans-Light.ttf");
+  }
