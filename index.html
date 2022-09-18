@@ -7,34 +7,76 @@
     <title>Home</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-    
-    <header>
 
-        <div class="header-margin width80">
-            <div class="burger-menu inline-block">
+<body class="linear-background margin-left-right-base">
+
+
+    <header class="fixed-header small-margin-top">
+        <div class="text-align-center relative">
+            <div class="burger-menu absolute">
                 <div class="oval"></div>
                 <div class="oval small-margin-top"></div>
-
             </div>
-            <h1 class="inline-block">Smith House</h1>
+
+            <h1 class="font-size-title">Smith House</h1>
         </div>
     </header>
 
 
-    <section class="circle-armed">
+    <section class="circle-armed small-margin-bottom margin-top">
 
-        <div class="circle">
+        <div id="circle" class="circle green-circle-background very-small-margin-bottom">
             <div class="img-wrapper-lock">
-                <img src="./img/lock.svg">
+                <img id="main-image" src="./img/homelocked.png">
+            </div>
+        </div>
+
+        <h2 class="subheading text-align-center">Your System is <div id="armed-status" class="green-text">Armed Home</div></h2>
+
+    </section>
+
+
+    <section class="disarm-home-away">
+
+        <div class="flex background-opaque light-padding">
+            <div id="disarmed" class="flex-one text-align-center opacity-50">
+                <div id="disarmed-img" class="icon-img-wrapper margin-center background-white">
+                    <img src="./img/unlocked.png">
+                </div>
+                <h4 class="small-margin-top">Disarmed</h4>
+            </div>
+
+            <div id="home" class="flex-one text-align-center">
+                <div id="home-img"  class="icon-img-wrapper margin-center background-green">
+                    <img src="./img/homelocked.png">
+                </div>
+                <h4 class="small-margin-top">Home</h4>
+            </div>
+
+            <div id="away" class="flex-one text-align-center opacity-50">
+                <div id="away-img" class="icon-img-wrapper margin-center background-white">
+                    <img src="./img/away.png">
+                </div>
+                <h4 class="small-margin-top">Away</h4>
             </div>
         </div>
 
     </section>
 
 
+    <section class="history small-margin-top">
+
+        <div class="background-opaque light-padding text-align-center">
+            <div class="icon-img-wrapper margin-center">
+                <img src="./img/history-icon.png">
+            </div>
+            <h4 class="very-small-margin-top">History</h4>
+            <h5 class="very-small-margin-top red-text">17 New Events</h5>
+        </div>
+
+    </section>
 
 
-
+<script src="./script.js"></script>
 </body>
 </html>
