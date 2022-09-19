@@ -1,3 +1,78 @@
+let item_one_switch = document.getElementById('item-one-switch');
+let item_one_switch_white = document.getElementById('item-one-switch-white');
+
+let item_two_switch = document.getElementById('item-two-switch');
+let item_two_switch_white = document.getElementById('item-two-switch-white');
+
+let item_three_switch = document.getElementById('item-three-switch');
+let item_three_switch_white = document.getElementById('item-three-switch-white');
+
+item_one_switch.onclick = item_one_toggle;
+item_two_switch.onclick = item_two_toggle;
+item_three_switch.onclick = item_three_toggle;
+
+function item_one_toggle() {
+    item_one_switch.classList.toggle("justify-end");
+    item_one_switch.classList.toggle("justify-start");
+    item_one_switch_white.classList.toggle("small-margin-right");
+    item_one_switch_white.classList.toggle("small-margin-left");
+}
+
+function item_two_toggle() {
+    item_two_switch.classList.toggle("justify-start");
+    item_two_switch.classList.toggle("justify-end");
+    item_two_switch_white.classList.toggle("small-margin-left");
+    item_two_switch_white.classList.toggle("small-margin-right");
+}
+
+function item_three_toggle() {
+    item_three_switch.classList.toggle("justify-end");
+    item_three_switch.classList.toggle("justify-start");
+    item_three_switch_white.classList.toggle("small-margin-right");
+    item_three_switch_white.classList.toggle("small-margin-left");
+}
+
+
+
+
+
+let indoor_button = document.getElementById('indoor-button');
+let outdoor_button = document.getElementById('outdoor-button');
+let item_one = document.getElementById('item-one');
+let item_two = document.getElementById('item-two');
+let item_three = document.getElementById('item-three');
+
+let item_one_image = document.getElementById('item-one-img');
+let item_two_image = document.getElementById('item-two-img');
+let item_three_image = document.getElementById('item-three-img');
+
+indoor_button.onclick = opacity_change_indoor;
+outdoor_button.onclick = opacity_change_outdoor;
+
+function opacity_change_indoor() {
+    indoor_button.classList.add("background-opaque-strong");
+    outdoor_button.classList.remove("background-opaque-strong");
+    item_one.innerHTML = "Living Room";
+    item_two.innerHTML = "Living Room";
+    item_three.innerHTML = "Living Room";
+    item_one_image.src="./img/light.ico";
+    item_two_image.src="./img/light.ico";
+    item_three_image.src="./img/light.ico";
+}
+
+function opacity_change_outdoor() {
+    indoor_button.classList.remove("background-opaque-strong");
+    outdoor_button.classList.add("background-opaque-strong");
+    item_one.innerHTML = "Garage Door";
+    item_one_image.src="./img/garage.png";
+    item_two.innerHTML = "Patio Light";
+    item_two_image.src="./img/light.ico";
+    item_three.innerHTML = "Spa";
+    item_three_image.src="./img/spa.png";
+}
+
+
+
 let menu = document.getElementById('menu');
 let to_show_menu = document.getElementById('to-show-menu');
 menu.onclick = menu_toggle;
@@ -17,6 +92,7 @@ function toggle_history(){
 }
 
 
+
 let disarmed = document.getElementById('disarmed');
 let disarmed_img = document.getElementById('disarmed-img');
 
@@ -32,9 +108,16 @@ let armed_status = document.getElementById('armed-status');
 
 let circle = document.getElementById('circle');
 
+// main_image.onclick = toggle_disarmed;
+
 disarmed_img.onclick = run_disarmed;
-home.onclick = run_home;
-away.onclick = run_away;
+home_img.onclick = run_home;
+away_img.onclick = run_away;
+
+// function toggle_disarmed(){
+
+// }
+
 
 function run_disarmed(){
     disarmed_img.classList.replace("background-white", "background-red");

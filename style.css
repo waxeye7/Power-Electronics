@@ -19,13 +19,20 @@ body { font-family:"MavenPro-Regular", Arial, sans-serif; }
 .flex-one { flex:1; }
 .flex-column { flex-direction: column; }
 .space-around { justify-content: space-around; }
+.justify-start { justify-content: flex-start; }
+.justify-end { justify-content: end; }
+.justify-center { justify-content: center; }
+.align-center { align-items: center; }
 
 
 .text-align-center { text-align: center; }
 .text-align-left { text-align: left; }
 
+.small-ish-margin-top { margin-top:12px; }
 .small-padding-top { padding-top: 6px; }
-
+.small-padding-bottom { padding-bottom: 6px; }
+.small-margin-right { margin-right: 6px; }
+.small-margin-left { margin-left: 6px; }
 .small-margin-bottom { margin-bottom: 20px; }
 .very-small-margin-bottom { margin-bottom: 10px; }
 .margin-center { margin-left:auto; margin-right:auto; }
@@ -38,20 +45,24 @@ body { font-family:"MavenPro-Regular", Arial, sans-serif; }
 .subheading { font-size: 28px; font-family:"MavenPro-Bold", Arial, Helvetica, sans-serif ;}
 .green-text { color:#15C12C; }
 .red-text { color:#fd2d2d }
+.background-blue { background-color: #03B6F2; }
 .background-white { background-color: #fff; border-radius: 50%; padding:14px; }
 .background-green { background-color: #67F37A; border-radius: 50%; padding:14px; outline: 2px black solid;}
 .background-red { background-color: #fd2d2d; border-radius: 50%; padding:14px; outline: 2px black solid;}
 .background-opaque { background-color:rgba(0, 0, 0, 0.05); border-radius: 17px; }
+.background-opaque-strong { background-color:rgba(0, 0, 0, 0.227); border-radius: 17px; }
 .background-menu { background-color: #60656f44; border-radius: 10%; }
 .opacity-50 { opacity:50%; }
 .header-margin { margin:24px; }
 .margin-left-right-base { margin-left: 24px; margin-right: 24px; }
 
 .light-padding { padding:12px; }
+.light-margin-left-right { margin-left:12px; margin-right:12px; }
 
 .margin-top { margin-top:20px; }
 .small-margin-top { margin-top: 6px; }
 .very-small-margin-top { margin-top:3px; }
+
 
 .green-circle-background { background-color:#67F37A; }
 .red-circle-background { background-color: #fd2d2d; }
@@ -64,7 +75,17 @@ body { font-family:"MavenPro-Regular", Arial, sans-serif; }
 .icon-img-wrapper { height:28px; width:28px; }
 .icon-img-wrapper img { height:100%; width:100%; }
 
+.footer-icons-wrapper { height:58px; width:58px; }
+.footer-icons-wrapper img { height:100%; width:100%; }
 
+.average-font-size { font-size: 22px; }
+.appliance-icon-img-wrapper { height:50px; width:50px; }
+.appliance-icon-img-wrapper img { height:100%; width:100%; }
+
+.border-radius-10px { border-radius: 10px; }
+
+.background-for-toggle { width:66px; height:36px; background-color: #000; border-radius: 20px; }
+.white-part-for-toggle { width:28px; height:28px; background-color: #fff; border-radius: 50%; }
 
 
 @font-face {
