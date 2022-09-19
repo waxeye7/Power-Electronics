@@ -7,6 +7,10 @@ let item_two_switch_white = document.getElementById('item-two-switch-white');
 let item_three_switch = document.getElementById('item-three-switch');
 let item_three_switch_white = document.getElementById('item-three-switch-white');
 
+let background_colour_item_one = document.getElementById('background-colour-item-one');
+let background_colour_item_two = document.getElementById('background-colour-item-two');
+let background_colour_item_three = document.getElementById('background-colour-item-three');
+
 item_one_switch.onclick = item_one_toggle;
 item_two_switch.onclick = item_two_toggle;
 item_three_switch.onclick = item_three_toggle;
@@ -16,6 +20,8 @@ function item_one_toggle() {
     item_one_switch.classList.toggle("justify-start");
     item_one_switch_white.classList.toggle("small-margin-right");
     item_one_switch_white.classList.toggle("small-margin-left");
+    background_colour_item_one.classList.toggle("background-blue");
+    background_colour_item_one.classList.toggle("green-circle-background");    
 }
 
 function item_two_toggle() {
@@ -23,6 +29,8 @@ function item_two_toggle() {
     item_two_switch.classList.toggle("justify-end");
     item_two_switch_white.classList.toggle("small-margin-left");
     item_two_switch_white.classList.toggle("small-margin-right");
+    background_colour_item_two.classList.toggle("background-blue");
+    background_colour_item_two.classList.toggle("green-circle-background");
 }
 
 function item_three_toggle() {
@@ -30,6 +38,8 @@ function item_three_toggle() {
     item_three_switch.classList.toggle("justify-start");
     item_three_switch_white.classList.toggle("small-margin-right");
     item_three_switch_white.classList.toggle("small-margin-left");
+    background_colour_item_three.classList.toggle("background-blue");
+    background_colour_item_three.classList.toggle("green-circle-background");
 }
 
 
@@ -72,14 +82,6 @@ function opacity_change_outdoor() {
 }
 
 
-
-let menu = document.getElementById('menu');
-let to_show_menu = document.getElementById('to-show-menu');
-menu.onclick = menu_toggle;
-
-function menu_toggle(){
-    to_show_menu.classList.toggle("hidden");
-}
 
 
 let history = document.getElementById('history');
