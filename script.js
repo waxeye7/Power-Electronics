@@ -1,3 +1,22 @@
+let menu = document.getElementById('menu');
+let to_show_menu = document.getElementById('to-show-menu');
+menu.onclick = menu_toggle;
+
+function menu_toggle(){
+    to_show_menu.classList.toggle("hidden");
+}
+
+
+let history = document.getElementById('history');
+let to_show_history = document.getElementById('to-show-history');
+let to_hide_history = document.getElementById('to-hide-history');
+history.onclick = toggle_history;
+function toggle_history(){
+    to_show_history.classList.toggle("hidden");
+    to_hide_history.classList.add("hidden");
+}
+
+
 let disarmed = document.getElementById('disarmed');
 let disarmed_img = document.getElementById('disarmed-img');
 
@@ -12,7 +31,6 @@ let main_image = document.getElementById('main-image');
 let armed_status = document.getElementById('armed-status');
 
 let circle = document.getElementById('circle');
-
 
 disarmed_img.onclick = run_disarmed;
 home.onclick = run_home;
@@ -35,7 +53,6 @@ function run_disarmed(){
     armed_status.classList.remove("green-text");
     armed_status.innerHTML="Disarmed";
 
-
     circle.classList.remove("green-circle-background");
     circle.classList.add("red-circle-background")
 }
@@ -55,7 +72,6 @@ function run_home(){
     armed_status.innerHTML="Armed Home";
     armed_status.classList.remove("red-text");
     armed_status.classList.add("green-text");
-    
 
     circle.classList.add("green-circle-background");
     circle.classList.remove("red-circle-background")
@@ -76,7 +92,6 @@ function run_away(){
     armed_status.classList.remove("red-text");
     armed_status.classList.add("green-text");
     armed_status.innerHTML="Armed Away";
-
 
     circle.classList.add("green-circle-background");
     circle.classList.remove("red-circle-background")

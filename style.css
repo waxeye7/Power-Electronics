@@ -1,6 +1,7 @@
 *{ margin:0; }
 body { font-family:"MavenPro-Regular", Arial, sans-serif; }
-
+.hidden { display:none; }
+/* a:hover { color:#15C12C; } */
 /* .fixed-header { position:fixed; } */
 
 .linear-background { background: linear-gradient(180deg, rgba(29, 178, 228, 0.2) 2.38%, rgba(29, 178, 228, 0.086) 50.61%, rgba(29, 178, 228, 0.07) 87.59%, rgba(29, 178, 228, 0.114) 102.38%); 
@@ -12,6 +13,7 @@ body { font-family:"MavenPro-Regular", Arial, sans-serif; }
 
 .inline-block { display:inline-block }
 
+.text-decoration-none-black { text-decoration: none; color:#000; }
 
 .flex { display:flex; }
 .flex-one { flex:1; }
@@ -20,6 +22,9 @@ body { font-family:"MavenPro-Regular", Arial, sans-serif; }
 
 
 .text-align-center { text-align: center; }
+.text-align-left { text-align: left; }
+
+.small-padding-top { padding-top: 6px; }
 
 .small-margin-bottom { margin-bottom: 20px; }
 .very-small-margin-bottom { margin-bottom: 10px; }
@@ -37,6 +42,7 @@ body { font-family:"MavenPro-Regular", Arial, sans-serif; }
 .background-green { background-color: #67F37A; border-radius: 50%; padding:14px; outline: 2px black solid;}
 .background-red { background-color: #fd2d2d; border-radius: 50%; padding:14px; outline: 2px black solid;}
 .background-opaque { background-color:rgba(0, 0, 0, 0.05); border-radius: 17px; }
+.background-menu { background-color: #60656f44; border-radius: 10%; }
 .opacity-50 { opacity:50%; }
 .header-margin { margin:24px; }
 .margin-left-right-base { margin-left: 24px; margin-right: 24px; }
