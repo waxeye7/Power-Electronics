@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="jquery-3.6.1.min.js"></script>
 </head>
 
 <body id="top" class="linear-background margin-left-right-base">
@@ -16,11 +17,12 @@
             <div id="menu" class="burger-menu absolute">
                 <div class="oval"></div>
                 <div class="oval small-margin-top"></div>
-
-                <div id="to-show-menu" class="hidden text-align-left background-menu small-padding-top">
-                    <a class="text-decoration-none-black" href="#top"><h3>Home</h3></a>
-                    <a class="text-decoration-none-black" href="./cameras.html"><h3>Cameras</h3></a>
-                    <a class="text-decoration-none-black" href="./heating.html"><h3>Heating</h3></a>
+                <div class="just-white-background">
+                    <div id="to-show-menu" class="hidden text-align-left background-menu">
+                        <a class="text-decoration-none-black" href="#top"><h3 class="bigger-font-size first-link-margin">Home</h3></a>
+                        <a class="text-decoration-none-black" href="./cameras.html"><h3 class="bigger-font-size margin-bottom-10px">Cameras</h3></a>
+                        <a class="text-decoration-none-black" href="./heating.html"><h3 class="bigger-font-size margin-bottom-10px">Heating</h3></a>
+                    </div>
                 </div>
             </div>
             <h1 class="font-size-title">Smith House</h1>
@@ -103,7 +105,7 @@
             <div id="background-colour-item-one" class="flex align-center light-padding background-blue border-radius-10px">
 
                 <div class="flex-one">
-                    <h3 id="item-one" class="average-font-size text-align-center">Living Room</h3>
+                    <h3 id="item-one" class="paragraph-font average-font-size text-align-center">Living Room</h3>
                 </div>
 
                 <div class="flex justify-center align-center flex-one">
@@ -123,7 +125,7 @@
             <div id="background-colour-item-two" class="flex align-center light-padding green-circle-background border-radius-10px">
 
                 <div class="flex-one">
-                    <h3 id="item-two" class="average-font-size text-align-center">Living Room</h3>
+                    <h3 id="item-two" class="paragraph-font average-font-size text-align-center">Living Room</h3>
                 </div>
 
                 <div class="flex justify-center align-center flex-one">
@@ -143,7 +145,7 @@
             <div id="background-colour-item-three" class="flex align-center light-padding background-blue border-radius-10px">
 
                 <div class="flex-one">
-                    <h3 id="item-three" class="average-font-size text-align-center">Living Room</h3>
+                    <h3 id="item-three" class="paragraph-font average-font-size text-align-center">Living Room</h3>
                 </div>
 
                 <div class="flex justify-center align-center flex-one">
@@ -183,8 +185,7 @@
 
     </footer>
 
-
-<script src="./script.index.js"></script>
 <script src="./script.global.js"></script>
+<script src="./script.index.js"></script>
 </body>
 </html>

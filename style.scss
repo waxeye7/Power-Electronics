@@ -1,27 +1,50 @@
+// @mixin padding-package {
+//     padding:12px;
+//     margin:4px;
+//     border:3px $sub-sub-color solid;
+//     min-height: 100px;
+// }
+
+// @include padding-package();
+
+$main_green: #15c12c;
+$second_green: #67f37a;
+$main_blue: #03b6f2;
+$main_red: #fd2d2d;
+
+$main_font: "MavenPro-Regular", Arial, sans-serif;
+$main_font_bold: "MavenPro-Bold", Arial, sans-serif;
+
+$paragraph_font: "OpenSans-Regular", Arial, sans-serif;
+
 * {
   margin: 0;
 }
-
 body {
-  font-family: "MavenPro-Regular", Arial, sans-serif;
+  font-family: $main_font;
 }
-
 .hidden {
   display: none;
 }
-
 /* a:hover { color:#15C12C; } */
 /* .fixed-header { position:fixed; } */
+
 .bold-font {
-  font-family: "MavenPro-Bold", Arial, sans-serif;
+  font-family: $main_font_bold;
 }
 
 .paragraph-font {
-  font-family: "OpenSans-Regular", Arial, sans-serif;
+    font-family: $paragraph_font;
 }
 
 .linear-background {
-  background: linear-gradient(180deg, rgba(29, 178, 228, 0.2) 2.38%, rgba(29, 178, 228, 0.086) 50.61%, rgba(29, 178, 228, 0.07) 87.59%, rgba(29, 178, 228, 0.114) 102.38%);
+  background: linear-gradient(
+    180deg,
+    rgba(29, 178, 228, 0.2) 2.38%,
+    rgba(29, 178, 228, 0.086) 50.61%,
+    rgba(29, 178, 228, 0.07) 87.59%,
+    rgba(29, 178, 228, 0.114) 102.38%
+  );
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -29,7 +52,6 @@ body {
 .absolute {
   position: absolute;
 }
-
 .relative {
   position: relative;
 }
@@ -54,27 +76,21 @@ body {
 .flex-one {
   flex: 1;
 }
-
 .flex-column {
   flex-direction: column;
 }
-
 .space-around {
   justify-content: space-around;
 }
-
 .justify-start {
   justify-content: flex-start;
 }
-
 .justify-end {
   justify-content: end;
 }
-
 .justify-center {
   justify-content: center;
 }
-
 .align-center {
   align-items: center;
 }
@@ -82,7 +98,6 @@ body {
 .text-align-center {
   text-align: center;
 }
-
 .text-align-left {
   text-align: left;
 }
@@ -92,7 +107,7 @@ body {
 }
 
 .margin-bottom {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .tiny-margin-bottom {
@@ -104,43 +119,35 @@ body {
 }
 
 .padding-top {
-  padding-top: 20px;
+    padding-top:20px;
 }
 
 .small-padding-top {
   padding-top: 6px;
 }
-
 .small-padding-bottom {
   padding-bottom: 6px;
 }
-
 .small-margin-right {
   margin-right: 6px;
 }
-
 .small-margin-left {
   margin-left: 6px;
 }
-
 .small-margin-bottom {
   margin-bottom: 20px;
 }
-
 .very-small-margin-bottom {
   margin-bottom: 10px;
 }
-
 .margin-center {
   margin-left: auto;
   margin-right: auto;
 }
-
 .margin-top-bot-auto {
   margin-top: auto;
   margin-bottom: auto;
 }
-
 .margin-left-auto {
   margin-left: auto;
 }
@@ -148,7 +155,6 @@ body {
 .burger-menu {
   top: 25%;
 }
-
 .oval {
   height: 8px;
   width: 35px;
@@ -159,57 +165,46 @@ body {
 .font-size-title {
   font-size: 36px;
 }
-
 .subheading {
   font-size: 28px;
-  font-family: "MavenPro-Bold", Arial, sans-serif;
+  font-family: $main_font_bold;
 }
-
 .green-text {
-  color: #15c12c;
+  color: $main_green;
 }
-
 .red-text {
-  color: #fd2d2d;
+  color: $main_red;
 }
-
 .background-black {
   background-color: #000;
 }
-
 .background-blue {
-  background-color: #03b6f2;
+  background-color: $main_blue;
 }
-
 .background-white {
   background-color: #fff;
   border-radius: 50%;
   padding: 14px;
 }
-
 .background-green {
-  background-color: #67f37a;
+  background-color: $second_green;
   border-radius: 50%;
   padding: 14px;
   outline: 2px black solid;
 }
-
 .background-red {
-  background-color: #fd2d2d;
+  background-color: $main_red;
   border-radius: 50%;
   padding: 14px;
   outline: 2px black solid;
 }
-
 .background-opaque {
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 17px;
 }
-
 .background-opaque-solid {
   background-color: rgba(0, 0, 0, 0.05);
 }
-
 .background-opaque-strong {
   background-color: rgba(0, 0, 0, 0.16);
   border-radius: 17px;
@@ -219,21 +214,17 @@ body {
   background-color: rgb(174, 194, 255);
   border-radius: 6%;
 }
-
 .background-menu {
-  background-color: rgba(96, 101, 111, 0.2666666667);
+  background-color: #60656f44;
   border-radius: 6%;
-  padding: 10px;
+  padding:10px;
 }
-
 .opacity-50 {
   opacity: 50%;
 }
-
 .header-margin {
   margin: 24px;
 }
-
 .margin-left-right-base {
   margin-left: 24px;
   margin-right: 24px;
@@ -243,16 +234,13 @@ body {
   padding: 12px;
 }
 
-.background-padding {
-  padding: 12px 16px;
-}
-
+.background-padding { padding:12px 16px; }
 .heating-card-green-padding {
-  padding: 20px 24px;
+    padding:20px 24px;
 }
 
 .padding {
-  padding: 10px;
+    padding:10px;
 }
 
 .light-margin-left-right {
@@ -260,34 +248,25 @@ body {
   margin-right: 12px;
 }
 
-.margin-left {
-  margin-left: 20px;
-}
-
-.margin-right {
-  margin-right: 20px;
-}
+.margin-left { margin-left:20px; }
+.margin-right { margin-right:20px; }
 
 .margin-top {
   margin-top: 20px;
 }
-
 .small-margin-top {
   margin-top: 6px;
 }
-
 .very-small-margin-top {
   margin-top: 3px;
 }
 
 .green-circle-background {
-  background-color: #67f37a;
+  background-color: $second_green;
 }
-
 .red-circle-background {
-  background-color: #fd2d2d;
+  background-color: $main_red;
 }
-
 .circle {
   border-radius: 50%;
   height: 110px;
@@ -310,7 +289,6 @@ body {
   max-height: 46px;
   max-width: 46px;
 }
-
 .img-wrapper-lock img {
   height: 100%;
   width: 100%;
@@ -320,7 +298,6 @@ body {
   height: 28px;
   width: 28px;
 }
-
 .icon-img-wrapper img {
   height: 100%;
   width: 100%;
@@ -330,7 +307,6 @@ body {
   height: 58px;
   width: 58px;
 }
-
 .footer-icons-wrapper img {
   height: 100%;
   width: 100%;
@@ -339,12 +315,10 @@ body {
 .average-font-size {
   font-size: 22px;
 }
-
 .appliance-icon-img-wrapper {
   height: 50px;
   width: 50px;
 }
-
 .appliance-icon-img-wrapper img {
   height: 100%;
   width: 100%;
@@ -364,7 +338,6 @@ body {
   background-color: #000;
   border-radius: 20px;
 }
-
 .white-part-for-toggle {
   width: 28px;
   height: 28px;
@@ -373,37 +346,29 @@ body {
 }
 
 .background-for-toggle-heating {
-  width: 50px;
-  height: 28px;
-  background-color: #000;
-  border-radius: 20px;
-}
+    width: 50px;
+    height: 28px;
+    background-color: #000;
+    border-radius: 20px;
+  }
+  .white-part-for-toggle-heating {
+    width: 22px;
+    height: 22px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+.smaller-margin-left { margin-left:4px; }
+.smaller-margin-right { margin-right:4px; }
 
-.white-part-for-toggle-heating {
-  width: 22px;
-  height: 22px;
-  background-color: #fff;
-  border-radius: 50%;
-}
-
-.smaller-margin-left {
-  margin-left: 4px;
-}
-
-.smaller-margin-right {
-  margin-right: 4px;
-}
 
 .left-arrow {
   height: 10px;
   width: 10px;
 }
-
 .right-arrow {
   height: 10px;
   width: 10px;
 }
-
 .left-arrow img {
   height: 100%;
   width: 100%;
@@ -411,7 +376,6 @@ body {
   bottom: 25%;
   right: 40%;
 }
-
 .right-arrow img {
   height: 100%;
   width: 100%;
@@ -425,58 +389,55 @@ body {
 }
 
 .first-link-margin {
-  margin-top: 10px;
-  margin-bottom: 10px;
+    margin-top:10px;
+    margin-bottom:10px;
 }
 
 .margin-bottom-10px {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .heating-plus-background {
-  background-color: #fff;
-  border-radius: 10px;
+    background-color: #fff;
+    border-radius: 10px;
 }
 
-.plus-font-size {
-  font-size: 50px;
-}
+.plus-font-size { font-size: 50px; }
 
-.plus-wrapper {
-  height: 20px;
-  width: 20px;
-}
-
-.plus-wrapper img {
-  height: 100%;
-  width: 100%;
-}
+.plus-wrapper { height:20px; width:20px; }
+.plus-wrapper img { height:100%; width:100%; }
 
 @font-face {
   font-family: "MavenPro-Regular";
   src: url("./fonts/MavenPro-Regular.ttf");
 }
+
 @font-face {
   font-family: "MavenPro-Black";
   src: url("./fonts/MavenPro-Black.ttf");
 }
+
 @font-face {
   font-family: "MavenPro-Bold";
   src: url("./fonts/MavenPro-Bold.ttf");
 }
+
 @font-face {
   font-family: "MavenPro-Medium";
   src: url("./fonts/MavenPro-Medium.ttf");
 }
+
 @font-face {
   font-family: "OpenSans-Regular";
   src: url("./fonts/OpenSans-Regular.ttf");
 }
+
 @font-face {
   font-family: "OpenSans-Bold";
   src: url("./fonts/OpenSans-Bold.ttf");
 }
+
 @font-face {
   font-family: "OpenSans-Light";
   src: url("./fonts/OpenSans-Light.ttf");
-}/*# sourceMappingURL=style.css.map */
+}

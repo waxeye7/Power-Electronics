@@ -4,8 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Cameras</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="jquery-3.6.1.min.js"></script>
+    <script>$.get("./footer.html", function (data) {$("#load-this-footer").replaceWith(data);});</script>
+
+    <script>
+    $.get("./footer.html", function (data) {
+        $("#load-this-footer").replaceWith(data);
+    });
+    </script>
+
 </head>
 
 <body id="top" class="linear-background margin-left-right-base">
@@ -16,10 +26,10 @@
                 <div class="oval"></div>
                 <div class="oval small-margin-top"></div>
                 <div class="just-white-background">
-                    <div id="to-show-menu" class="hidden text-align-left background-menu small-padding-top">
-                        <a class="text-decoration-none-black" href="./index.html"><h3>Home</h3></a>
-                        <a class="text-decoration-none-black" href="#top"><h3>Cameras</h3></a>
-                        <a class="text-decoration-none-black" href="./heating.html"><h3>Heating</h3></a>
+                    <div id="to-show-menu" class="hidden text-align-left background-menu">
+                        <a class="text-decoration-none-black" href="./index.html"><h3 class="bigger-font-size first-link-margin">Home</h3></a>
+                        <a class="text-decoration-none-black" href="#top"><h3 class="bigger-font-size margin-bottom-10px">Cameras</h3></a>
+                        <a class="text-decoration-none-black" href="./heating.html"><h3 class="bigger-font-size margin-bottom-10px">Heating</h3></a>
                     </div>
                 </div>
             </div>
@@ -43,11 +53,17 @@
         
         <div class="img-wrapper-cam02">
             <img src="./img/cam02.jpg" alt="Cam02">
+            <div class="left-arrow relative">
+                <img class="absolute" src="./img/left.svg" alt="">
+            </div>
+            <div class="right-arrow relative">
+                <img class="absolute" src="./img/right.svg" alt="">
+            </div>
         </div>
 
     </section>
 
-    <section class="small-cameras">
+    <section class="small-cameras small-margin-bottom">
         <div class="flex background-opaque-solid small-ish-margin-top">
             <div class="flex-one small-ish-margin-right">
                 <div class="flex">
@@ -186,7 +202,7 @@
     </section>
 
 
-    <footer class="light-margin-left-right small-ish-margin-top small-margin-bottom">
+    <footer class="light-margin-left-right small-margin-bottom">
 
         <div class="flex">
             <div id="indoor-button" class="flex flex-column align-center justify-center flex-one small-padding-bottom background-opaque-strong">
@@ -206,7 +222,6 @@
         </div>
 
     </footer>
-
 
 
     <script src="./script.global.js"></script>
