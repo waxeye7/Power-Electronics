@@ -1,11 +1,11 @@
 @mixin light-package {
-    // font-family: "MavenPro-Light";
+  // font-family: "MavenPro-Light";
 }
 
 $main_green: #15c12c;
-$second_green: #67f37a;
-$main_blue: #03b6f2;
-$main_red: #fd2d2d;
+$second_green: #97f1a3;
+$main_blue: #91e3ff;
+$main_red: #fe7e7e;
 
 $main_font: "MavenPro-Light", "MavenPro-Regular", Arial, sans-serif;
 $main_font_bold: "MavenPro-Bold", Arial, sans-serif;
@@ -31,7 +31,7 @@ body {
 }
 
 .paragraph-font {
-    font-family: $paragraph_font_light;
+  font-family: $paragraph_font_light;
 }
 
 .linear-background {
@@ -96,6 +96,12 @@ body {
 .align-center {
   align-items: center;
 }
+.align-start {
+  align-items: flex-start;
+}
+.align-end {
+  align-items: flex-end;
+}
 
 .text-align-center {
   text-align: center;
@@ -109,7 +115,7 @@ body {
 }
 
 .margin-bottom {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .tiny-margin-bottom {
@@ -121,7 +127,7 @@ body {
 }
 
 .padding-top {
-    padding-top:20px;
+  padding-top: 20px;
 }
 
 .small-padding-top {
@@ -155,7 +161,7 @@ body {
 }
 
 .burger-menu {
-  top: 25%;
+  top: 33%;
 }
 
 .oval {
@@ -201,6 +207,16 @@ body {
   padding: 14px;
   outline: 2px black solid;
 }
+.dark-layer-div {
+  width:100vw;
+  height:100%;
+}
+.light-background-opaque {
+  background-color: rgba(0, 0, 0, 0.025);
+}
+.light-light-layer {
+  background-color: rgba(0, 0, 0, 0.01);
+}
 .background-opaque {
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 17px;
@@ -209,7 +225,7 @@ body {
   background-color: rgba(0, 0, 0, 0.05);
 }
 .background-opaque-strong {
-  background-color: rgba(0, 0, 0, 0.16);
+  background-color: rgba(0, 0, 0, 0.055);
   border-radius: 17px;
 }
 
@@ -221,7 +237,7 @@ body {
 .background-menu {
   background-color: #30c1ff44;
   border-radius: 6%;
-  padding:10px 0;
+  padding: 10px 0;
 }
 .opacity-50 {
   opacity: 50%;
@@ -230,7 +246,10 @@ body {
   margin: 24px;
 }
 
-.neutralise-margin-left-right-base { margin-left:-24px; margin-right:-24px; }
+.neutralise-margin-left-right-base {
+  margin-left: -24px;
+  margin-right: -24px;
+}
 
 .margin-left-right-base {
   margin-left: 24px;
@@ -241,13 +260,15 @@ body {
   padding: 12px;
 }
 
-.background-padding { padding:4% 6%; }
+.background-padding {
+  padding: 4% 6%;
+}
 .heating-card-green-padding {
-    padding:16% 4%;
+  padding: 16% 4%;
 }
 
 .padding {
-    padding:10px;
+  padding: 10px;
 }
 
 .light-margin-left-right {
@@ -255,8 +276,12 @@ body {
   margin-right: 12px;
 }
 
-.margin-left { margin-left:20px; }
-.margin-right { margin-right:20px; }
+.margin-left {
+  margin-left: 20px;
+}
+.margin-right {
+  margin-right: 20px;
+}
 
 .margin-top {
   margin-top: 20px;
@@ -342,7 +367,7 @@ body {
 .background-for-toggle {
   width: 66px;
   height: 36px;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.875);
   border-radius: 20px;
 }
 .white-part-for-toggle {
@@ -353,20 +378,23 @@ body {
 }
 
 .background-for-toggle-heating {
-    width: 50px;
-    height: 28px;
-    background-color: #000;
-    border-radius: 20px;
-  }
-  .white-part-for-toggle-heating {
-    width: 22px;
-    height: 22px;
-    background-color: #fff;
-    border-radius: 50%;
-  }
-.smaller-margin-left { margin-left:4px; }
-.smaller-margin-right { margin-right:4px; }
-
+  width: 50px;
+  height: 28px;
+  background-color: #000;
+  border-radius: 20px;
+}
+.white-part-for-toggle-heating {
+  width: 22px;
+  height: 22px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.smaller-margin-left {
+  margin-left: 4px;
+}
+.smaller-margin-right {
+  margin-right: 4px;
+}
 
 .left-arrow {
   height: 10px;
@@ -396,26 +424,42 @@ body {
 }
 
 .first-link-margin {
-    margin-top:10px;
-    margin-bottom:10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .margin-bottom-10px {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .heating-plus-background {
-    background-color: #fff;
-    border-radius: 10px;
+  background-color: #fff;
+  border-radius: 10px;
 }
 
-.plus-font-size { font-size: 50px; }
+.plus-font-size {
+  font-size: 50px;
+}
 
-.plus-wrapper { height:20px; width:20px; }
-.plus-wrapper img { height:100%; width:100%; }
+.plus-wrapper {
+  height: 20px;
+  width: 20px;
+}
+.plus-wrapper img {
+  height: 100%;
+  width: 100%;
+}
 
-.nav-bar-style { width:100vw; }
-.border-radius-0 { border-radius: 0% !important; }
+.nav-bar-style {
+  width: 100vw;
+}
+.border-radius-0 {
+  border-radius: 0% !important;
+}
+
+.negative-z-index {
+  z-index: -1;
+}
 
 @font-face {
   font-family: "MavenPro-Regular";
@@ -441,9 +485,6 @@ body {
   font-family: "MavenPro-Light";
   src: url("./fonts/MavenProLight-300.otf");
 }
-
-
-
 
 @font-face {
   font-family: "OpenSans-Regular";

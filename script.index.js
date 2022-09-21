@@ -22,6 +22,8 @@ function item_one_toggle() {
     item_one_switch_white.classList.toggle("small-margin-left");
     background_colour_item_one.classList.toggle("background-blue");
     background_colour_item_one.classList.toggle("green-circle-background");    
+
+    item_one_switch.classList.toggle("animate__pulse");
 }
 
 function item_two_toggle() {
@@ -31,6 +33,8 @@ function item_two_toggle() {
     item_two_switch_white.classList.toggle("small-margin-right");
     background_colour_item_two.classList.toggle("background-blue");
     background_colour_item_two.classList.toggle("green-circle-background");
+
+    item_two_switch.classList.toggle("animate__pulse");
 }
 
 function item_three_toggle() {
@@ -40,6 +44,9 @@ function item_three_toggle() {
     item_three_switch_white.classList.toggle("small-margin-left");
     background_colour_item_three.classList.toggle("background-blue");
     background_colour_item_three.classList.toggle("green-circle-background");
+
+    
+    item_three_switch.classList.toggle("animate__pulse");
 }
 
 

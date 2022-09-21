@@ -7,21 +7,13 @@
     <title>Cameras</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="jquery-3.6.1.min.js"></script>
-    <script>$.get("./footer.html", function (data) {$("#load-this-footer").replaceWith(data);});</script>
-
-    <script>
-    $.get("./footer.html", function (data) {
-        $("#load-this-footer").replaceWith(data);
-    });
-    </script>
-
 </head>
 
-<body id="top" class="linear-background margin-left-right-base">
+<body id="body" class="linear-background margin-left-right-base">
 
-    <header class="fixed-header small-margin-top">
-        <div class="text-align-center relative">
+    <header class="relative">
+        <div class="absolute light-background-opaque dark-layer-div neutralise-margin-left-right-base negative-z-index"></div>
+        <div class="text-align-center relative small-padding-top">
             <div id="menu" class="burger-menu absolute">
                 <div class="oval"></div>
                 <div class="oval small-margin-top"></div>
@@ -30,10 +22,10 @@
         </div>
         <div class="neutralise-margin-left-right-base small-margin-top">
             <div id="to-show-menu" class="hidden text-align-left background-menu nav-bar-style border-radius-0">
-                <div class="flex space-around">
-                    <a class="text-decoration-none-black" href="./index.html"><h3 class="bigger-font-size">Home</h3></a>
-                    <a class="text-decoration-none-black" href="#top"><h3 class="bigger-font-size">Cameras</h3></a>
-                    <a class="text-decoration-none-black" href="./heating.html"><h3 class="bigger-font-size">Heating</h3></a>
+                <div class="flex text-align-center flex-wrap">
+                    <a class="text-decoration-none-black flex-one" href="./index.html"><h3 class="bigger-font-size">Home</h3></a>
+                    <a class="text-decoration-none-black flex-one" href="#body"><h3 class="bigger-font-size">Cameras</h3></a>
+                    <a class="text-decoration-none-black flex-one" href="./heating.html"><h3 class="bigger-font-size">Heating</h3></a>
                 </div>
             </div>
         </div>

@@ -84,6 +84,14 @@ body {
   align-items: center;
 }
 
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
 .text-align-center {
   text-align: center;
 }
@@ -151,7 +159,7 @@ body {
 }
 
 .burger-menu {
-  top: 25%;
+  top: 33%;
 }
 
 .oval {
@@ -175,7 +183,7 @@ body {
 }
 
 .red-text {
-  color: #fd2d2d;
+  color: #fe7e7e;
 }
 
 .background-black {
@@ -183,7 +191,7 @@ body {
 }
 
 .background-blue {
-  background-color: #03b6f2;
+  background-color: #91e3ff;
 }
 
 .background-white {
@@ -193,17 +201,30 @@ body {
 }
 
 .background-green {
-  background-color: #67f37a;
+  background-color: #97f1a3;
   border-radius: 50%;
   padding: 14px;
   outline: 2px black solid;
 }
 
 .background-red {
-  background-color: #fd2d2d;
+  background-color: #fe7e7e;
   border-radius: 50%;
   padding: 14px;
   outline: 2px black solid;
+}
+
+.dark-layer-div {
+  width: 100vw;
+  height: 100%;
+}
+
+.light-background-opaque {
+  background-color: rgba(0, 0, 0, 0.025);
+}
+
+.light-light-layer {
+  background-color: rgba(0, 0, 0, 0.01);
 }
 
 .background-opaque {
@@ -216,7 +237,7 @@ body {
 }
 
 .background-opaque-strong {
-  background-color: rgba(0, 0, 0, 0.16);
+  background-color: rgba(0, 0, 0, 0.055);
   border-radius: 17px;
 }
 
@@ -291,11 +312,11 @@ body {
 }
 
 .green-circle-background {
-  background-color: #67f37a;
+  background-color: #97f1a3;
 }
 
 .red-circle-background {
-  background-color: #fd2d2d;
+  background-color: #fe7e7e;
 }
 
 .circle {
@@ -371,7 +392,7 @@ body {
 .background-for-toggle {
   width: 66px;
   height: 36px;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.875);
   border-radius: 20px;
 }
 
@@ -468,6 +489,10 @@ body {
 
 .border-radius-0 {
   border-radius: 0% !important;
+}
+
+.negative-z-index {
+  z-index: -1;
 }
 
 @font-face {

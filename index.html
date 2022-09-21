@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
-<body id="top" class="linear-background margin-left-right-base">
+<body id="body" class="linear-background margin-left-right-base">
 
-
-    <header class="fixed-header small-margin-top">
-        <div class="text-align-center relative">
+    <header class="relative">
+        <div class="absolute light-background-opaque dark-layer-div neutralise-margin-left-right-base negative-z-index"></div>
+        <div class="text-align-center relative small-padding-top">
             <div id="menu" class="burger-menu absolute">
                 <div class="oval"></div>
                 <div class="oval small-margin-top"></div>
@@ -22,10 +22,10 @@
         </div>
         <div class="neutralise-margin-left-right-base small-margin-top">
             <div id="to-show-menu" class="hidden text-align-left background-menu nav-bar-style border-radius-0">
-                <div class="flex space-around">
-                    <a class="text-decoration-none-black" href="#top"><h3 class="bigger-font-size">Home</h3></a>
-                    <a class="text-decoration-none-black" href="./cameras.html"><h3 class="bigger-font-size">Cameras</h3></a>
-                    <a class="text-decoration-none-black" href="./heating.html"><h3 class="bigger-font-size">Heating</h3></a>
+                <div class="flex text-align-center flex-wrap">
+                    <a class="text-decoration-none-black flex-one" href="#body"><h3 class="bigger-font-size">Home</h3></a>
+                    <a class="text-decoration-none-black flex-one" href="./cameras.html"><h3 class="bigger-font-size">Cameras</h3></a>
+                    <a class="text-decoration-none-black flex-one" href="./heating.html"><h3 class="bigger-font-size">Heating</h3></a>
                 </div>
             </div>
         </div>
@@ -110,12 +110,12 @@
                     <h3 id="item-one" class="paragraph-font average-font-size text-align-center">Living Room</h3>
                 </div>
 
-                <div class="flex justify-center align-center flex-one">
+                <div class="flex justify-center align-end flex-one">
                     <div class="margin-center appliance-icon-img-wrapper">
                         <img id="item-one-img" src="./img/light.ico">
                     </div>
 
-                    <div id="item-one-switch" class="margin-center background-for-toggle flex justify-start align-center">
+                    <div id="item-one-switch" class="margin-center background-for-toggle flex justify-start align-center animate__animated">
                         <div id="item-one-switch-white" class="white-part-for-toggle small-margin-left"></div>
                     </div>
                 </div>
@@ -130,12 +130,12 @@
                     <h3 id="item-two" class="paragraph-font average-font-size text-align-center">Living Room</h3>
                 </div>
 
-                <div class="flex justify-center align-center flex-one">
+                <div class="flex justify-center align-end flex-one">
                     <div class="margin-center appliance-icon-img-wrapper">
                         <img id="item-two-img" src="./img/light.ico">
                     </div>
 
-                    <div id="item-two-switch" class="margin-center background-for-toggle flex justify-end align-center">
+                    <div id="item-two-switch" class="margin-center background-for-toggle flex justify-end align-center animate__animated">
                         <div id="item-two-switch-white" class="white-part-for-toggle small-margin-right"></div>
                     </div>
                 </div>
@@ -150,12 +150,12 @@
                     <h3 id="item-three" class="paragraph-font average-font-size text-align-center">Living Room</h3>
                 </div>
 
-                <div class="flex justify-center align-center flex-one">
+                <div class="flex justify-center align-end flex-one">
                     <div class="margin-center appliance-icon-img-wrapper">
                         <img id="item-three-img" src="./img/light.ico">
                     </div>
 
-                    <div id="item-three-switch" class="margin-center background-for-toggle flex justify-start align-center">
+                    <div id="item-three-switch" class="margin-center background-for-toggle flex justify-start align-center animate__animated">
                         <div id="item-three-switch-white" class="white-part-for-toggle small-margin-left"></div>
                     </div>
                 </div>
