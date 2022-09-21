@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: "MavenPro-Regular", Arial, sans-serif;
+  font-family: "MavenPro-Light", "MavenPro-Regular", Arial, sans-serif;
 }
 
 .hidden {
@@ -17,7 +17,7 @@ body {
 }
 
 .paragraph-font {
-  font-family: "OpenSans-Regular", Arial, sans-serif;
+  font-family: "OpenSans-Light", Arial, sans-serif;
 }
 
 .linear-background {
@@ -41,6 +41,11 @@ body {
 .text-decoration-none-black {
   text-decoration: none;
   color: #000;
+}
+
+.text-decoration-none-white {
+  text-decoration: none;
+  color: #fff;
 }
 
 .flex {
@@ -221,9 +226,9 @@ body {
 }
 
 .background-menu {
-  background-color: rgba(96, 101, 111, 0.2666666667);
+  background-color: rgba(48, 193, 255, 0.2666666667);
   border-radius: 6%;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 .opacity-50 {
@@ -232,6 +237,11 @@ body {
 
 .header-margin {
   margin: 24px;
+}
+
+.neutralise-margin-left-right-base {
+  margin-left: -24px;
+  margin-right: -24px;
 }
 
 .margin-left-right-base {
@@ -244,11 +254,11 @@ body {
 }
 
 .background-padding {
-  padding: 12px 16px;
+  padding: 4% 6%;
 }
 
 .heating-card-green-padding {
-  padding: 20px 24px;
+  padding: 16% 4%;
 }
 
 .padding {
@@ -452,6 +462,14 @@ body {
   width: 100%;
 }
 
+.nav-bar-style {
+  width: 100vw;
+}
+
+.border-radius-0 {
+  border-radius: 0% !important;
+}
+
 @font-face {
   font-family: "MavenPro-Regular";
   src: url("./fonts/MavenPro-Regular.ttf");
@@ -467,6 +485,10 @@ body {
 @font-face {
   font-family: "MavenPro-Medium";
   src: url("./fonts/MavenPro-Medium.ttf");
+}
+@font-face {
+  font-family: "MavenPro-Light";
+  src: url("./fonts/MavenProLight-300.otf");
 }
 @font-face {
   font-family: "OpenSans-Regular";
