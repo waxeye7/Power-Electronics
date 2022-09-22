@@ -1,3 +1,13 @@
+.h1-main-heading {
+  font-size: 36px;
+  font-family: "MavenPro-Regular";
+}
+
+.h2-sub-heading {
+  font-size: 32px;
+  font-family: "MavenPro-Light";
+}
+
 * {
   margin: 0;
 }
@@ -92,6 +102,10 @@ body {
   align-items: flex-end;
 }
 
+.text-align-justify {
+  text-align: justify;
+}
+
 .text-align-center {
   text-align: center;
 }
@@ -167,10 +181,6 @@ body {
   width: 35px;
   border-radius: 16%;
   background-color: black;
-}
-
-.font-size-title {
-  font-size: 36px;
 }
 
 .subheading {
@@ -265,6 +275,11 @@ body {
   margin-right: -24px;
 }
 
+.steal-some-margin {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
 .margin-left-right-base {
   margin-left: 24px;
   margin-right: 24px;
@@ -275,11 +290,11 @@ body {
 }
 
 .background-padding {
-  padding: 4% 6%;
+  padding: 4% 4%;
 }
 
 .heating-card-green-padding {
-  padding: 16% 4%;
+  padding: 16% 3%;
 }
 
 .padding {
@@ -341,7 +356,6 @@ body {
   max-height: 46px;
   max-width: 46px;
 }
-
 .img-wrapper-lock img {
   height: 100%;
   width: 100%;
@@ -351,7 +365,6 @@ body {
   height: 28px;
   width: 28px;
 }
-
 .icon-img-wrapper img {
   height: 100%;
   width: 100%;
@@ -361,7 +374,6 @@ body {
   height: 58px;
   width: 58px;
 }
-
 .footer-icons-wrapper img {
   height: 100%;
   width: 100%;
@@ -375,7 +387,6 @@ body {
   height: 50px;
   width: 50px;
 }
-
 .appliance-icon-img-wrapper img {
   height: 100%;
   width: 100%;
@@ -477,7 +488,6 @@ body {
   height: 20px;
   width: 20px;
 }
-
 .plus-wrapper img {
   height: 100%;
   width: 100%;

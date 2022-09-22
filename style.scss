@@ -1,6 +1,21 @@
-@mixin light-package {
-  // font-family: "MavenPro-Light";
+@mixin black-main-heading-package {
+  font-size: 36px;
+  font-family: "MavenPro-Regular";
 }
+
+
+@mixin black-sub-heading-package {
+  font-size: 32px;
+  font-family: "MavenPro-Light";
+}
+
+.h1-main-heading {
+  @include black-main-heading-package();
+}
+.h2-sub-heading {
+  @include black-sub-heading-package();
+}
+
 
 $main_green: #15c12c;
 $second_green: #97f1a3;
@@ -18,8 +33,9 @@ $paragraph_font_light: "OpenSans-Light", Arial, sans-serif;
 }
 body {
   font-family: $main_font;
-  // @include light-package();
 }
+
+
 .hidden {
   display: none;
 }
@@ -103,6 +119,10 @@ body {
   align-items: flex-end;
 }
 
+.text-align-justify {
+  text-align: justify;
+}
+
 .text-align-center {
   text-align: center;
 }
@@ -171,9 +191,6 @@ body {
   background-color: black;
 }
 
-.font-size-title {
-  font-size: 36px;
-}
 .subheading {
   font-size: 28px;
   font-family: $main_font_bold;
@@ -250,6 +267,10 @@ body {
   margin-left: -24px;
   margin-right: -24px;
 }
+.steal-some-margin {
+  margin-left: -8px;
+  margin-right:-8px;
+}
 
 .margin-left-right-base {
   margin-left: 24px;
@@ -261,10 +282,12 @@ body {
 }
 
 .background-padding {
-  padding: 4% 6%;
+  // border-radius:0px 20px !important;
+  padding: 4% 4%;
 }
+
 .heating-card-green-padding {
-  padding: 16% 4%;
+  padding: 16% 3%;
 }
 
 .padding {
@@ -320,29 +343,34 @@ body {
 .img-wrapper-lock {
   max-height: 46px;
   max-width: 46px;
-}
-.img-wrapper-lock img {
-  height: 100%;
-  width: 100%;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+
 }
 
 .icon-img-wrapper {
   height: 28px;
   width: 28px;
-}
-.icon-img-wrapper img {
-  height: 100%;
-  width: 100%;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .footer-icons-wrapper {
   height: 58px;
   width: 58px;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
 }
-.footer-icons-wrapper img {
-  height: 100%;
-  width: 100%;
-}
+
 
 .average-font-size {
   font-size: 22px;
@@ -350,10 +378,11 @@ body {
 .appliance-icon-img-wrapper {
   height: 50px;
   width: 50px;
-}
-.appliance-icon-img-wrapper img {
-  height: 100%;
-  width: 100%;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .border-radius-10px {
@@ -444,10 +473,11 @@ body {
 .plus-wrapper {
   height: 20px;
   width: 20px;
-}
-.plus-wrapper img {
-  height: 100%;
-  width: 100%;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .nav-bar-style {
