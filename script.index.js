@@ -69,11 +69,11 @@ outdoor_button.onclick = opacity_change_outdoor;
 function opacity_change_indoor() {
     indoor_button.classList.add("background-opaque-strong");
     outdoor_button.classList.remove("background-opaque-strong");
-    item_one.innerHTML = "Living Room";
-    item_two.innerHTML = "Living Room";
+    item_one.innerHTML = "Bedroom";
+    item_two.innerHTML = "Television";
     item_three.innerHTML = "Living Room";
     item_one_image.src="./img/light.ico";
-    item_two_image.src="./img/light.ico";
+    item_two_image.src="./img/television.png";
     item_three_image.src="./img/light.ico";
 }
 
